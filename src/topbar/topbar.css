@@ -1,0 +1,44 @@
+.top{
+    width: 100%;
+    height: 50px; 
+    background-color: white;
+   /*  the position of the header will never move.  */
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.topLeft,.topRight{
+    /* top left and right are 3 units.  */
+    flex:3;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.topCenter{
+    /* center is 6 units */
+    flex:6;
+}
+
+.topImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+
+
+/* 
+FONT FAMILIES.
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Varela Round', sans-serif; */
