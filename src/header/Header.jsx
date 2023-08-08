@@ -9,9 +9,8 @@ export default function Header() {
             <span className="headerTitleLg">Blog</span>
         </div>
         <img className ="header" src="https://res.cloudinary.com/simpleview/image/upload/v1648755098/clients/austin/Austin_Skyline_Credit_Christopher_Sherman_lifetime__4f60343d-9f69-450c-8ad3-fa636761786d.jpg"
-        alt = "" />
-
-      header
+        alt = "" 
+        />
     </div >
   )
 }
