@@ -10,6 +10,7 @@
 }
 .img{
     width: 100%;
+    margin-top: 15px;
 }
 
 .sidebarItem{
@@ -25,5 +26,40 @@
     border-top: 1px solid #a7a4a4;
     border-bottom: 1px solid #a7a4a4;
     font-family: 'Varela Round', sans-serif;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
 
+}
+/* target the <p> elements within elements with the class .sidebarItem and apply style to them. */
+.sidebarItem > p {
+    padding: 30px;
+}
+
+.sidebarList{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.sidebarListItem{
+    display: inline-block;
+    width: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+sidebarSocial{
+    margin-top: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebarIcon{
+    font-size: 16px;
+    margin-left: 10px;
 }
