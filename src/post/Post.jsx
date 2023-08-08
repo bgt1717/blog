@@ -18,8 +18,11 @@ export default function Post() {
            {/* hr/ adds a line */}
             <hr/>
             <span className="postDate"> 1 hour ago</span>
-
         </div>
+        <p className = "postDesc" >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        </p> 
 
 
     </div>

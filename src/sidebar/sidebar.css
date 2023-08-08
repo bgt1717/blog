@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-sidebarSocial{
+.sidebarSocial{
     margin-top: 15px;
     width: 250px;
     display: flex;
@@ -61,5 +61,5 @@ sidebarSocial{
 
 .sidebarIcon{
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 1px;
 }
