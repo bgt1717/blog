@@ -7,10 +7,10 @@ import Single from "./pages/single/Single";
 function App() {
   return (
     <>
-      <TopBar/>
-      {/* <p>test</p> */}
-      <Single/>
-      <Home/>
+        <TopBar/>
+        {/* <p>test</p> */}
+        <Single/>
+        
       
     </>
  
