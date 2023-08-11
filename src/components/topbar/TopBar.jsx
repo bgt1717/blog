@@ -1,7 +1,10 @@
 import React from 'react'
 import "./topbar.css"
+import { Link } from 'react-router-dom';
 
 export default function TopBar() {
+  const user = false;
+
   return (
     <div className = "top">
         <div className="topLeft">
@@ -10,19 +13,41 @@ export default function TopBar() {
         </div>
         <div className="topCenter">
             <ul className= "topList">
-                <li className="topListItem">HOME</li>
-                <li className="topListItem">ABOUT</li>
-                <li className="topListItem">CONTACT</li>
-                <li className="topListItem">WRITE</li>
-                <li className="topListItem">LOGOUT</li>
-
+                <li className="topListItem">
+                    <Link className="link" to="/">HOME</Link></li>
+                <li className="topListItem"><Link className="link" to="/about">ABOUT</Link></li>
+                <li className="topListItem"><Link className="link" to="/contact">CONTACT</Link></li>
+                <li className="topListItem"><Link className="link" to="/write">WRITE</Link></li>
+                <li className="topListItem">
+                {/* If there's not a user, no logout function. */} 
+                {user && "LOGOUT"}
+                </li>
             </ul>
         </div>
         <div className="topRight">
-            <img className = "topImg"
-                src="https://res.cloudinary.com/simpleview/image/upload/v1648755098/clients/austin/Austin_Skyline_Credit_Christopher_Sherman_lifetime__4f60343d-9f69-450c-8ad3-fa636761786d.jpg" 
-                alt = "" >
-            </img>
+            {
+                user ? (
+                    <img className = "topImg"
+                    src="https://res.cloudinary.com/simpleview/image/upload/v1648755098/clients/austin/Austin_Skyline_Credit_Christopher_Sherman_lifetime__4f60343d-9f69-450c-8ad3-fa636761786d.jpg" 
+                    alt = "" >
+                </img>
+                ) : (
+                    <ul ClassName="topList">
+                        <li className="topListItem">
+                        <Link className="link" to="/login">
+                            LOGIN
+                        </Link>
+                        </li>
+                        <li className="topListItem">
+                        <Link className="link" to="/register">
+                            REGISTER
+                        </Link>
+                        </li>
+                    </ul>
+                    
+                )
+            }
+
             <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
         
         </div>

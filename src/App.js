@@ -16,15 +16,19 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const user= false; 
   return(
     <Router>
-      <TopBar />
+    <TopBar />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="register" element={<Register />} />
-      <Route path="login" element={<Login />} />
-      <Route path="write" element={<Write />} />
-      <Route path="settings" element={<Settings />} />
+      <Route path="/" exact element={<Home></Home>}></Route> 
+      {/* if there is a user, go to Home. If not a user go to Register. */}
+      <Route path="/register" element={user ? <Home/> : <Register />} ></Route>
+      <Route path="/login" element={user ? <Home/> : <Login />} ></Route>
+      {/* If there is a user go to Write. If not, go to Register. */}
+      <Route path="/write" element={user ? <Write /> : <Register />} ></Route>
+      <Route path="/settings" element={user ? <Settings /> : <Register/>} ></Route>
+      {/* Everyone can see this page. No conditions needed for posts. */}
       <Route path="/post/:postId" element={<Single />} ></Route> 
     </Routes>
   </Router>
