@@ -14,6 +14,7 @@ export default function Posts() {
         <Post/>
 
       
+      
     </div>
   )
 }
