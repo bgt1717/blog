@@ -21,4 +21,32 @@ router.post("/register", async (req, res)=>{
       }
 });
 
+// LOGIN
+router.post("/login", async (req, res) => {
+    try {
+      const user = await User.findOne({ username: req.body.username });
+      
+      if (!user) {
+        return res.status(400).json("Wrong Credentials!");
+      }
+  
+      const validated = await bcrypt.compare(req.body.password, user.password);
+      
+      if (!validated) {
+        return res.status(400).json("Wrong Credentials!");
+      }
+  
+      // If login is successful, you can send user data or a token here.
+      // For example, you can send the user's username and email.
+      const { username, email } = user;
+  
+      res.status(200).json({ username, email });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+  
+
+
+
 module.exports = router
