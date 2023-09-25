@@ -13,7 +13,9 @@ router.put("/:id", async (req, res)=>{
     try{
         const updatedUser = await User.findByIdAndUpdate(req.params.id, {
             $set:req.body,
-        });
+        },
+        {new:true});
+
         res.status(200).json(updatedUser);
 
       } catch (err) {
@@ -27,5 +29,22 @@ router.put("/:id", async (req, res)=>{
 
 
 //DELETE
+
+router.put("/:id", async (req, res)=>{
+    if(req.body.userId === req.params.id){
+
+    try{
+        //HERE
+        res.status(200).json(updatedUser);
+
+      } catch (err) {
+        res.status(500).json(err);
+      }
+    }
+    else{
+        res.status(401).json("You can delete only your account!");
+    }
+});
+
 
 module.exports = router;
