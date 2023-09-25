@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const authRoute = require("./routes/auth");
 
 dotenv.config();
 
@@ -21,6 +22,8 @@ mongoose.connect(process.env.MONGO_URL, {
 app.get("/", (req, res) => {
   res.send("Hello, world!");
 });
+
+app.use("/api/auth", authRoute);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
