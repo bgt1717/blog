@@ -26,11 +26,11 @@ mongoose.connect(process.env.MONGO_URL, {
 
 app.use("/api/auth", authRoute);
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something went wrong!");
-});
+// // Error handling middleware
+// app.use((err, req, res, next) => {
+//   console.error(err.stack);
+//   res.status(500).send("Something went wrong!");
+// });
 
 // Start the server
 const PORT = process.env.PORT || 3000;
