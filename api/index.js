@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
+const categoryRoute = require("./routes/categories");
+const multer = require("multer")
 
 dotenv.config();
 app.use(express.json());
@@ -26,18 +28,25 @@ mongoose.connect(process.env.MONGO_URL, {
 //   res.send("Hello, world!");
 // });
 
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "images");
+  },
+  filename: (req, file, cb) => {
+    cb(null, req.body.name);
+  },
+});
+
+const upload = multer({ storage: storage });
+app.post("/api/upload", upload.single("file"), (req, res) => {
+  res.status(200).json("File has been uploaded");
+});
+
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/categories", categoryRoute);
 
-// // Error handling middleware
-// app.use((err, req, res, next) => {
-//   console.error(err.stack);
-//   res.status(500).send("Something went wrong!");
-// });
-
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen("5000", () => {
+  console.log("Backend is running.");
 });
