@@ -32,7 +32,7 @@ export default function TopBar() {
                     alt = "" >
                 </img>
                 ) : (
-                    <ul ClassName="topList">
+                    <ul className="topList">
                         <li className="topListItem" >
                             <Link className="link" to="/login">
                             LOGIN
