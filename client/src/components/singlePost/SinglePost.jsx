@@ -1,13 +1,35 @@
 import React from 'react'
 import "./singlePost.css"
+import { useLocation } from 'react-router-dom'
+import { useEffect,useState } from 'react'
+import axios from 'axios'
 
 export default function SinglePost() {
+    const location = useLocation()
+    // console.log(location.pathname.split("/")[2])
+    const path = location.pathname.split("/")[2]
+    const[post, setPost] =useState({})
+
+    useEffect(() => {
+        const getPost = async () => {
+            const res = await axios.get("/posts/" + path);
+            // console.log(res)
+            setPost(res.data)
+        };
+        getPost()
+    }, [path]);
   return (
     <div className="singlePost">
         <div className="singlePostWrapper">
-            <img className = "imgPost" src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg" alt="" />
+          {post.photo && (
+            <img  
+                src={post.photo}
+                alt="" 
+                className="singlePostItem"
+            />
+          )}
             <h1 className="singlePostTitle">
-                Lorem ipsum dolor sit amet.
+                {post.title}
                 <div className="singlePostEdit">
                     <i className="singlePostIcon fa-regular fa-pen-to-square"></i>
                     <i class="singlePostIcon far fa-trash-alt"></i>
@@ -16,23 +38,13 @@ export default function SinglePost() {
             
             </h1>
             <div className="singlePostInfo">
-                <span className="singlePostAuthor"> Author: <b> Townsend</b></span>
-                <span className="singlePostDate"> 1 hour ago </span>
+                <span className="singlePostAuthor"> Author: <b> {post.username}</b></span>
+                <span className="singlePostDate"> {new Date(post.createdAt).toDateString()}  </span>
 
             </div>
-            <p className="singlePostDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quasi animi dignissimos, provident blanditiis incidunt 
-                vel quidem sapiente ducimus! Adipisci, perspiciatis? Dolorem, 
-                tempora laboriosam. Necessitatibus, atque perferendis. Distinctio,
-                 inventore temporibus!orem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quasi animi dignissimos, provident blanditiis incidunt 
-                vel quidem sapiente ducimus! Adipisci, perspiciatis? Dolorem, 
-                tempora laboriosam. Necessitatibus, atque perferendis. Distinctio,
-                 inventore temporibus!orem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quasi animi dignissimos, provident blanditiis incidunt 
-                vel quidem sapiente ducimus! Adipisci, perspiciatis? Dolorem, 
-                tempora laboriosam. Necessitatibus, atque perferendis. Distinctio,
-                 inventore temporibus!orem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quasi animi dignissimos, provident blanditiis incidunt 
-                vel quidem sapiente ducimus! Adipisci, perspiciatis? Dolorem, 
-                tempora laboriosam. Necessitatibus, atque perferendis. Distinctio,
-                 inventore temporibus!</p>
+            <p className="singlePostDesc">
+                {post.desc}
+            </p>
         </div>
       
     </div>
