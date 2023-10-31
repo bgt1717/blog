@@ -10,17 +10,19 @@ import { useLocation } from 'react-router-dom';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
-  const location = useLocation();
-  console.log(location)
+  const { search } = useLocation();
 
+
+  //You're using the useEffect hook to perform a network request when the search parameter changes. 
+  //This ensures that when the search parameter in the URL changes, the component re-renders and fetches new posts.
   useEffect(()=>{
     const fetchPosts = async ()=>{
-      const res = await axios.get("/posts")
+      const res = await axios.get("/posts" + search);
       // console.log(res) // To see the posts in console log.
       setPosts(res.data)
     } 
-    fetchPosts()
-  }, [])
+    fetchPosts();
+  }, [search]);
 
   return (
     <>
