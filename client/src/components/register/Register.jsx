@@ -1,23 +1,31 @@
 import { Link } from "react-router-dom"
 import "./register.css"
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import axios from "axios"
 
 export default function Register() {
   const [username,setUsername] = useState("")
   const [email,setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [error, setError] = useState(false);
 
 
   const handleSubmit = async (e) =>{
     //prevents refreshing page when submitting.
     e.preventDefault();
-    const res = await axios.post("/auth/register", {
-        username,
-        email,
-        password,
+    setError(false);
+    try{
+        const res = await axios.post("/auth/register", {
+          username,
+          email,
+          password,
     });
-    console.log(res)
+    //if there's data and sucessfully register, redirects to login page. 
+    res.data && window.location.replace("/login");
+  }catch(err){
+    // console.log(err)
+    setError(true);
+  }
   };
   return (
     <div className ="register">
@@ -48,6 +56,8 @@ export default function Register() {
         <button className="registerLoginButton">
             <Link className="link" to="/login">Login</Link>
         </button>
+        {/* If there's an error, use this span. */}
+        {error && <span>Something went wrong!</span>}
     </div>
   )
 }
