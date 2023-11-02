@@ -57,7 +57,7 @@ export default function Register() {
             <Link className="link" to="/login">Login</Link>
         </button>
         {/* If there's an error, use this span. */}
-        {error && <span>Something went wrong!</span>}
+        {error && <span style={{ color:"red", marginTop:"10px"}}>Something went wrong!</span>}
     </div>
   )
 }
