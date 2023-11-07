@@ -5,6 +5,8 @@ import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./components/register/Register";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 import React from "react";
 import {
@@ -14,7 +16,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const user= false; 
+  const {user} = useContext(Context);
   return(
     <Router>
     <TopBar />
