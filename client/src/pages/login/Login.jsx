@@ -22,7 +22,6 @@ export default function Login() {
       dispatch({ type: "LOGIN_FAILURE" });
     }
   };
-
   return (
     <div className="login">
       <span className="loginTitle">Login</span>
