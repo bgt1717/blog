@@ -27,7 +27,7 @@ export default function Sidebar() {
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
         </div>
-        <div className="sidebarItem">
+        {/* <div className="sidebarItem">
           <span className="sidebarTitle">CATEGORIES</span>
           <ul className="sidebarList">
 
@@ -40,7 +40,7 @@ export default function Sidebar() {
             
 
           </ul>
-        </div>
+        </div> */}
         <div className="sidebarItem">
             <span className="sidebarTitle">FOLLOW US</span>
                 <div className="sidebarSocial">
