@@ -12,9 +12,6 @@ export default function Post({post}) {
                 {post.categories.map((c) => (
                   <span className="postCat">{c.name}</span>
                 ))}
-                
-                <span className="postCat">Life</span>
-
             </div>
             <Link to={`/post/${post._id}`} className="link" >
             <span className="postTitle">{post.title}</span>
