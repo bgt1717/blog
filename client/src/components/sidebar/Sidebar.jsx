@@ -44,7 +44,9 @@ export default function Sidebar() {
         <div className="sidebarItem">
             <span className="sidebarTitle">FOLLOW US</span>
                 <div className="sidebarSocial">
-                    <i className=" sidebarIcon fa-brands fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/bryce-townsend-426289237/" target="_blank" rel="noopener noreferrer">
+                    <i className="topIcon fa-brands fa-linkedin"></i>
+                  </a>
                 </div>
         </div>
     </div>
