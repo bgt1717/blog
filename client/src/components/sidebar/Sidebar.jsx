@@ -1,20 +1,20 @@
 import React from 'react'
 import "./sidebar.css"
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
-  const [cats, setCats] = useState([]);
+  // const [cats, setCats] = useState([]);
 
-  useEffect(()=>{
-    const getCats = async ()=>
-    {
-      const res = await axios.get("/categories")
-      setCats(res.data)
-    }
-    getCats();
-  }, [])
+  // useEffect(()=>{
+  //   const getCats = async ()=>
+  //   {
+  //     const res = await axios.get("/categories")
+  //     setCats(res.data)
+  //   }
+  //   getCats();
+  // }, [])
   return (
     <div className = "sidebar">
         <div className="sidebarItem">
