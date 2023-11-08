@@ -38,24 +38,36 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-//DELETE POST
+// DELETE POST
+// DELETE POST
 router.delete("/:id", async (req, res) => {
   try {
-    const post = await Post.findById(req.params.id);
+    const postId = req.params.id;
+    const post = await Post.findById(postId);
+
+    if (!post) {
+      return res.status(404).json("Post not found");
+    }
+
     if (post.username === req.body.username) {
       try {
-        await post.delete();
-        res.status(200).json("Post has been deleted...");
+        await post.deleteOne(); // Use deleteOne to delete the post
+        res.status(200).json("Post has been deleted");
       } catch (err) {
-        res.status(500).json(err);
+        console.error("Error deleting the post:", err);
+        res.status(500).json(err.message);
       }
     } else {
-      res.status(401).json("You can delete only your post!");
+      res.status(401).json("You can delete only your post");
     }
   } catch (err) {
-    res.status(500).json(err);
+    console.error("Error finding the post:", err);
+    res.status(500).json(err.message);
   }
 });
+
+
+
 
 //GET POST
 router.get("/:id", async (req, res) => {

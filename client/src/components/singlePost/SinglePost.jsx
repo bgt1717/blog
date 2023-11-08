@@ -25,15 +25,28 @@ export default function SinglePost() {
     getPost();
   }, [path]);
 
+  // const handleDelete = async () => {
+  //   try {
+  //     await axios.delete(`/posts/${post._id}`, {
+  //       data: {username:user.username },
+  //     });
+  //     window.location.replace("/");
+  //   } catch (err) {}
+  // };
+
   const handleDelete = async () => {
     try {
       await axios.delete(`/posts/${post._id}`, {
-        data: {username:user.username },
+        data: { username: user.username },
       });
+      // Redirect to the home screen after successful deletion
       window.location.replace("/");
-    } catch (err) {}
+    } catch (err) {
+      // Handle errors, e.g., display an error message to the user
+      console.error("Error deleting the post:", err);
+    }
   };
-
+  
   const handleUpdate = async () => {
     try {
       await axios.put(`/posts/${post._id}`, {
