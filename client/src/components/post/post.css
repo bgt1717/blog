@@ -2,14 +2,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 48%; /* Set the initial width for two posts per column */
-    margin-bottom: 20px; /* Add some spacing between posts */
+    width: 48%;
+    margin-bottom: 20px;
   }
   
-  /* Media query for smaller screens */
   @media screen and (max-width: 1142px) {
     .post {
-      width: 100%; /* Change to one post per column */
+      width: 100%;
     }
   }
   
@@ -20,11 +19,12 @@
   }
   
   .postImg {
-    width: 100%; /* Adjusted to take the full width of the container */
+    width: 100%;
     height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px; /* Adjusted to create space between image and title */
   }
   
   .postInfo {
@@ -44,22 +44,22 @@
   .postTitle {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    margin-top: 15px;
+    font-size: 35px;
+    margin-top: 15px; /* Adjusted to lower the title */
     cursor: pointer;
   }
   
   .postDate {
     font-family: 'Lora', serif;
     font-style: italic;
-    font-size: 13px;
+    font-size: 25px;
     color: #999;
     margin-top: 15px;
   }
   
   .postDesc {
     font-family: 'Varela Round', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     color: #444;
     line-height: 24px;
     margin-top: 15px;
@@ -72,6 +72,8 @@
     flex-direction: column;
     align-items: center;
   }
+  
+  
   
 
 
