@@ -71,6 +71,7 @@
 
 }
 /* Add this media query at the end of your existing styles */
+/* Add this media query at the end of your existing styles */
 @media (max-width: 1142px) {
     .topList {
       display: none; /* Hide the navigation list */
@@ -93,6 +94,14 @@
       margin-left: 15px;
     }
   }
+  
+  /* Add this media query to hide the hamburger menu icon above 1142px */
+  @media (min-width: 1143px) {
+    .mobileMenuIcon {
+      display: none;
+    }
+  }
+  
   
 
 
