@@ -1,0 +1,29 @@
+/* Add these styles to your CSS file or use inline styles in the component */
+
+.mobile-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile-menu {
+    background: white; /* Set the background color of the menu */
+    padding: 300px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .linkm {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: black; 
+    text-decoration: none;
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./single.css"
-import Sidebar from "../../components/sidebar/Sidebar"
+// import Sidebar from "../../components/sidebar/Sidebar"
 import SinglePost from '../../components/singlePost/SinglePost'
 
 export default function Single() {
@@ -8,7 +8,7 @@ export default function Single() {
     <div className="single"> 
         {/* post */}
         <SinglePost/>
-        <Sidebar/>
+        {/* <Sidebar/> */}
 
       
     </div>
