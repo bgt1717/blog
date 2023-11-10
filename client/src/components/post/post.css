@@ -14,18 +14,18 @@
   
   .img {
     width: 100%;
-    height: 350px;
+    height: auto; /* Set height to auto for proportional scaling */
     border-radius: 10px;
   }
   
   .postImg {
     width: 100%;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px; /* Adjusted to create space between image and title */
+    height: 550px; /* Set a consistent starting height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+    margin-bottom: 30px;
   }
+  
   
   .postInfo {
     display: flex;
