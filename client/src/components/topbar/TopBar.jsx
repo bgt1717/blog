@@ -79,7 +79,7 @@ export default function TopBar() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && <MobileMenu handleClose={toggleMobileMenu} />}
 
-        <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+        {/* <i className="topSearchIcon fa-solid fa-magnifying-glass"></i> */}
       </div>
     </div>
   );
