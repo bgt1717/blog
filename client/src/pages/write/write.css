@@ -2,10 +2,14 @@
     padding-top: 50px;
     
   }
-  
+  .instruction{
+    text-align: center;
+    font-size: 30px;
+  }
+
   .writeImg {
-    margin-left: 150px;
-    width: 70vw;
+    margin-left: 20px;
+    width: 91vw;
     height: 550px;
     border-radius: 10px;
     object-fit: cover;
@@ -18,7 +22,8 @@
   }
   
   .writeFormGroup {
-    margin-left: 150px;
+    
+    margin-left: 50px;
     display: flex;
     align-items: center;
     
@@ -68,22 +73,105 @@
     font-size: 16px;
   }
 
-    @media (max-width: 1350px) {
-      .writeInput {
-        font-size: 30px;
-        border: none;
-        padding: 20px;
-        width: 40vw;
+  @media (max-width: 1250px) {
+
+    .writeFormGroup {
+  
+      margin-left: 50px;
+      display: flex;
+      align-items: center;
+      
+      
+    }
+   
+    .writeSubmit {
+      position: absolute;
+      top: 20px;
+      right: 150px;
+      color: white;
+      background-color: teal;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+  }
+/* --------------------------------------- */
+    /* @media (max-width: 850px) {
+      .writeImg {
+        margin-left: 50px;
+        width: 0px;
+        height: 350px;
+        border-radius: 10px;
+        object-fit: cover;
         
       }
-    }
-    @media (max-width: 920px) {
-      .writeInput {
-        font-size: 30px;
-        border: none;
-        padding: 20px;
-        width: 20vw;
-        
-      }
-    }
+      .writeFormGroup {
     
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        
+        
+      }
+      .writeInput {
+        font-size: 20px;
+        border: none;
+        padding: 20px;
+        width: 55vw;
+        
+      }
+      .writeSubmit {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        color: white;
+        background-color: teal;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+    } */
+    /* --------------------------------------- */
+    /* @media (max-width: 650px) {
+      .writeImg {
+        margin-left: 50px;
+        width: 80vw;
+        height: 550px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .writeFormGroup {
+    
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        
+        
+      }
+      .writeInput {
+        font-size: 20px;
+        border: none;
+        padding: 20px;
+        width: 55vw;
+        
+      }
+      .writeSubmit {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        color: white;
+        background-color: teal;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+    } */

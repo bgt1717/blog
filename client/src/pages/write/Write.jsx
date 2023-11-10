@@ -32,7 +32,9 @@ export default function Write() {
     } catch (err) {}
   };
   return (
+    
     <div className="write">
+      <div className="instruction">Create a Blog Post</div>
       {file && (
         <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
       )}
@@ -41,6 +43,7 @@ export default function Write() {
           <label htmlFor="fileInput">
             <i className="writeIcon fas fa-plus"></i>
           </label>
+          
           <input
             type="file"
             id="fileInput"
