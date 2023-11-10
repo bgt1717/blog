@@ -88,10 +88,11 @@
   
     .mobileMenuIcon {
       display: block; /* Display the hamburger menu icon */
-      font-size: 24px;
+      font-size: 40px;
       color: #666;
       cursor: pointer;
       margin-left: 15px;
+      margin-right:20px;
     }
   }
   
