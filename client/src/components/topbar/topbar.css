@@ -70,6 +70,30 @@
 
 
 }
+/* Add this media query at the end of your existing styles */
+@media (max-width: 1142px) {
+    .topList {
+      display: none; /* Hide the navigation list */
+    }
+  
+    .topListItem {
+      display: block; /* Display list items as block */
+      text-align: center; /* Center text in each block */
+    }
+  
+    .topRight {
+      flex: 1; /* Adjust the topRight section for the hamburger menu */
+    }
+  
+    .mobileMenuIcon {
+      display: block; /* Display the hamburger menu icon */
+      font-size: 24px;
+      color: #666;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+  }
+  
 
 
 
