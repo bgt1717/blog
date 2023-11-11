@@ -67,9 +67,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   
   
