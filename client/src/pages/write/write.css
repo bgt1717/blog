@@ -8,9 +8,9 @@
   }
 
   .writeImg {
-    margin-left: 20px;
-    width: 91vw;
-    height: 550px;
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
     border-radius: 10px;
     object-fit: cover;
     
@@ -63,7 +63,7 @@
   .writeSubmit {
     position: absolute;
     top: 20px;
-    right: 250px;
+    right: 10%;
     color: white;
     background-color: teal;
     padding: 10px;
@@ -73,105 +73,114 @@
     font-size: 16px;
   }
 
-  @media (max-width: 1250px) {
-
-    .writeFormGroup {
-  
-      margin-left: 50px;
-      display: flex;
-      align-items: center;
-      
-      
-    }
-   
-    .writeSubmit {
-      position: absolute;
-      top: 20px;
-      right: 150px;
-      color: white;
-      background-color: teal;
-      padding: 10px;
-      border: none;
+  @media (max-width: 690px) {
+    .writeImg {
+      margin-left: 10%;
+      width: 80%;
+      height: 50vh;
       border-radius: 10px;
-      cursor: pointer;
-      font-size: 16px;
+      object-fit: cover;
+      
     }
-
+    .writeInput {
+      font-size: 23px;
+      border: none;
+      padding: 20px;
+      width: 55vw;
+      
+    }
+    
+    .writeInput:focus {
+      outline: none;
+    }
+    
+    .writeText {
+      font-size: 15px;
+      height: 100vh;
+    }
   }
+   
+
 /* --------------------------------------- */
-    /* @media (max-width: 850px) {
-      .writeImg {
-        margin-left: 50px;
-        width: 0px;
-        height: 350px;
-        border-radius: 10px;
-        object-fit: cover;
-        
-      }
-      .writeFormGroup {
+@media (max-width: 510px) {
+  .writeImg {
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
     
-        margin-left: 50px;
-        display: flex;
-        align-items: center;
-        
-        
-      }
-      .writeInput {
-        font-size: 20px;
-        border: none;
-        padding: 20px;
-        width: 55vw;
-        
-      }
-      .writeSubmit {
-        position: absolute;
-        top: 20px;
-        right: 60px;
-        color: white;
-        background-color: teal;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-
-    } */
-    /* --------------------------------------- */
-    /* @media (max-width: 650px) {
-      .writeImg {
-        margin-left: 50px;
-        width: 80vw;
-        height: 550px;
-        border-radius: 10px;
-        object-fit: cover;
-      }
-      .writeFormGroup {
+  }
+  .writeInput {
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    width: 50vw;
     
-        margin-left: 50px;
-        display: flex;
-        align-items: center;
-        
-        
-      }
-      .writeInput {
-        font-size: 20px;
-        border: none;
-        padding: 20px;
-        width: 55vw;
-        
-      }
-      .writeSubmit {
-        position: absolute;
-        top: 20px;
-        right: 60px;
-        color: white;
-        background-color: teal;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 16px;
-      }
+  }
+  
+  .writeInput:focus {
+    outline: none;
+  }
+  
+  .writeText {
+    font-size: 15px;
+    height: 100vh;
+  }
+}
 
-    } */
+/* --------------------------------------- */
+@media (max-width: 470px) {
+  .writeImg {
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+  .writeInput {
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    width: 45vw;
+    
+  }
+  
+  .writeInput:focus {
+    outline: none;
+  }
+  
+  .writeText {
+    font-size: 15px;
+    height: 100vh;
+  }
+}
+
+/* --------------------------------------- */
+@media (max-width: 390px) {
+  .writeImg {
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+  .writeInput {
+    font-size: 25px;
+    border: none;
+    padding: 20px;
+    width: 50vw;
+    
+  }
+  
+  .writeInput:focus {
+    outline: none;
+  }
+  
+  .writeText {
+    font-size: 15px;
+    height: 100vh;
+  }
+}
