@@ -2,11 +2,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 48%;
+    width: 32%;
     margin-bottom: 20px;
   }
   
-  @media screen and (max-width: 1142px) {
+
+  @media screen and (max-width: 1400px) {
+    .post {
+      width: 48%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
     .post {
       width: 100%;
     }
@@ -20,17 +26,17 @@
   
   .postImg {
     width: 100%;
-    height: 550px; /* Set a consistent starting height */
+    height: 350px; /* Set a consistent starting height */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   
   
   .postInfo {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
   }
   
   .postCat {
@@ -46,14 +52,23 @@
     font-weight: 700;
     font-size: 35px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .postDate {
     font-family: 'Lora', serif;
     font-style: italic;
-    font-size: 25px;
+    font-size: 15px;
     color: #999;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+
   }
   
   .postDesc {
