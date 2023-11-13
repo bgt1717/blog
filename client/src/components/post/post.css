@@ -33,11 +33,11 @@
   }
   
   
-  .postInfo {
+  /* .postInfo { */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
-  }
+  /* } */
   
   .postCat {
     font-family: 'Varela Round', sans-serif;
