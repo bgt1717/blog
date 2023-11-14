@@ -5,8 +5,10 @@ import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./components/register/Register";
+import About from "./pages/about/About";
 import { useContext } from "react";
 import { Context } from "./context/Context";
+
 
 import React from "react";
 import {
@@ -22,6 +24,7 @@ function App() {
     <TopBar />
     <Routes>
       <Route path="/" exact element={<Home></Home>}></Route> 
+      <Route path="/about" exact element={<About></About>}></Route> 
       {/* if there is a user, go to Home. If not a user go to Register. */}
       <Route path="/register" element={user ? <Home/> : <Register />} ></Route>
       <Route path="/login" element={user ? <Home/> : <Login />} ></Route>
