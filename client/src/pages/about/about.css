@@ -1,0 +1,24 @@
+.about-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .about-container h2 {
+    /* Add styles for the heading if needed */
+  }
+  
+  .about-paragraph {
+    /* Add styles for the paragraph if needed */
+  }
+  
+  /* You can also style the image if needed */
+  .about-container img {
+    /* Add styles for the image if needed */
+  }
+  
