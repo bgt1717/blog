@@ -11,11 +11,13 @@
   }
   
   .singlePostImg {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 500px;
     width: 100%;
-    height: 500px;
+    height: auto;
     border-radius: 5px;
     object-fit: cover;
-
   }
   
   .singlePostTitle {
@@ -72,7 +74,8 @@
     line-height: 25px;
     word-wrap: break-word; /* Allow long words to break and wrap */
     overflow: hidden; /* Hide any overflowing content */
-    max-width: 50%; /* Ensure the text doesn't exceed its container width */
+    max-width: 1750px; /* Set a maximum width for larger screens */
+    text-align: center;
   }
   
   
@@ -102,6 +105,95 @@
     cursor: pointer;
     align-self: flex-end;
     margin-top: 20px;
+  }
+
+
+
+
+  @media (max-width: 1800px) {
+    .singlePostDesc {
+      max-width: 1600px; /* Adjust the maximum width for medium-sized screens */
+    }
+  }
+  @media (max-width: 1550px) {
+    .singlePostDesc {
+      max-width: 1400px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1500px) {
+    .singlePostDesc {
+      max-width: 1300px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1350px) {
+    .singlePostDesc {
+      max-width: 1250px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1280px) {
+    .singlePostDesc {
+      max-width: 1200px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1225px) {
+    .singlePostDesc {
+      max-width: 1150px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1225px) {
+    .singlePostDesc {
+      max-width: 1150px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1180px) {
+    .singlePostDesc {
+      max-width: 1130px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1150px) {
+    .singlePostDesc {
+      max-width: 1050px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 1080px) {
+    .singlePostDesc {
+      max-width: 900px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 950px) {
+    .singlePostDesc {
+      max-width: 800px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 850px) {
+    .singlePostDesc {
+      max-width: 700px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 750px) {
+    .singlePostDesc {
+      max-width: 600px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 650px) {
+    .singlePostDesc {
+      max-width: 500px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 550px) {
+    .singlePostDesc {
+      max-width: 400px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 450px) {
+    .singlePostDesc {
+      max-width: 300px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  @media (max-width: 350px) {
+    .singlePostDesc {
+      max-width: 200px; /* Adjust the maximum width for smaller screens */
+    }
   }
 
 
