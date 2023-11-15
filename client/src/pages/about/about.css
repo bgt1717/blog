@@ -22,3 +22,12 @@
     /* Add styles for the image if needed */
   }
   
+  .about-paragraph{
+    background-color: white;
+    font-size: 30px;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    border-style:groove;
+    font-family: 'Lora', serif;
+  }

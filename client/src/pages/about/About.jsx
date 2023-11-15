@@ -8,13 +8,14 @@ export default function About() {
   };
 
   return (
+    
     <div style={containerStyle} className="about-container">
-      <h2>About Us</h2>
       <p className="about-paragraph">
         Welcome to our platform! Here, you can share your thoughts and ideas by creating posts.
-        To get started, simply create an account, and you'll be able to contribute and engage
+        To get started, simply Register an account, and you'll be able to contribute and engage
         with our community. We look forward to hearing from you!
       </p>
     </div>
+    
   );
 }
