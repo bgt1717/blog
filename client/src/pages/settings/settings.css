@@ -15,14 +15,22 @@
   
   .settingsUpdateTitle {
     font-size: 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: lightcoral;
   }
   
   .settingsDeleteTitle {
-    color: red;
-    font-size: 12px;
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin-top: 20px;
     cursor: pointer;
+    text-align: center; /* Center the text horizontally */
+    
   }
   
   .settingsForm {
@@ -37,15 +45,15 @@
   }
   
   .settingsPP > img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
     object-fit: cover;
   }
   
   .settingsPPIcon {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: lightcoral;
     color: white;
@@ -57,7 +65,7 @@
   }
   
   .settingsForm > label {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 20px;
   }
   
@@ -67,6 +75,7 @@
     height: 30px;
     border: none;
     border-bottom: 1px solid lightgray;
+    font-size: 25px;
   }
   
   .settingsSubmit{

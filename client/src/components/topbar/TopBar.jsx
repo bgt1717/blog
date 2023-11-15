@@ -24,10 +24,9 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <a href="https://www.linkedin.com/in/bryce-townsend-426289237/" target="_blank" rel="noopener noreferrer">
-          <i className="topIcon fa-brands fa-linkedin"></i>
-        </a>
-        {/* can add more icons from https://fontawesome.com/icons/ */}
+      <Link className="link" to="/">
+              The Austin Travel Blog
+        </Link>
       </div>
       <div className="topCenter">
         <ul className="topList">
