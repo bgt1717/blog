@@ -90,10 +90,14 @@
     color: #666;
     font-size: 18px;
     line-height: 25px;
+    width: 100%; /* Set width to 100% for full width */
+    max-width: none; /* Remove any max-width constraints */
+    height: 600px;
   }
   
   .singlePostDescInput:focus {
     outline: none;
+    width:500px;
   }
   .singlePostButton {
     width: 100px;
