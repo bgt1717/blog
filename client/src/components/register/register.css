@@ -22,14 +22,14 @@
 .registerForm >label{
     /* top and bottom 10px, right and left 0px. */
     margin: 10px 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .registerInput{
     padding: 10px;
     background-color: white;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -41,7 +41,7 @@
     color: white;
     border-radius: 10px;
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .registerLoginButton{
@@ -54,7 +54,7 @@
     padding: 10px;
     color: white;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 @media screen and (min-width: 1143px) {
     .registerLoginButton {
