@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?t=st=1691680748~exp=1691684348~hmac=b9bf83a6054e8b3a38b873d4ad3f28035e08ebbdeb7d5cc2f60f7299b1a2664a&w=1380");
+    /* background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?t=st=1691680748~exp=1691684348~hmac=b9bf83a6054e8b3a38b873d4ad3f28035e08ebbdeb7d5cc2f60f7299b1a2664a&w=1380"); */
     background-size:cover;
     
     

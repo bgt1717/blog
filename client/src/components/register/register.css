@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://www.stockvault.net/data/2011/02/06/117454/thumb16.jpg");
+    /* background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://www.stockvault.net/data/2011/02/06/117454/thumb16.jpg"); */
     background-size:cover;
 
 }
