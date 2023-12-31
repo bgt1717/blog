@@ -15,7 +15,9 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try{
-        const res = await axios.post("https://blogbackend-6zuh.onrender.com/auth/register", {
+      // http://localhost:5000/
+      // https://blogbackend-6zuh.onrender.com/
+        const res = await axios.post("http://localhost:3000/auth/register", {
           username,
           email,
           password,

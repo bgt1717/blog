@@ -9,7 +9,9 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PF = "https://blogbackend-6zuh.onrender.com/images/";
+  const PF = "http://localhost:3000/images/";
+  // http://localhost:5000/
+  //https://blogbackend-6zuh.onrender.com/
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");

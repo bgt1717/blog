@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default function Post({ post }) {
   const PF = "https://blogbackend-6zuh.onrender.com/images/";
+  //
+  //http://localhost:5000/
 
   // Truncate description to 200 characters
   const truncatedDesc = post.desc.length > 200 ? `${post.desc.substring(0, 200)}...` : post.desc;
