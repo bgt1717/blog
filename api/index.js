@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const cors = require("cors"); // Import cors module
+const cors = require("cors");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
@@ -11,8 +11,17 @@ const multer = require("multer");
 const path = require("path");
 
 dotenv.config();
+
+// CORS configuration
+const corsOptions = {
+  origin: "http://localhost:3000", // Replace with your frontend's URL
+  credentials: true, // Enable credentials (cookies, authorization headers, etc.)
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions)); // Enable CORS with options
 app.use(express.json());
-app.use(cors()); // Enable CORS for all routes
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 // Connect to MongoDB
