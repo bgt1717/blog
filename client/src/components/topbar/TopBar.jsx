@@ -8,7 +8,7 @@ import MobileMenu from './MobileMenu';
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:3000/images/";
+  const PF = "https://blogbackend-6zuh.onrender.com/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
